@@ -1,0 +1,179 @@
+.navImage {
+    width: 70px;
+    height: auto;
+}
+
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: #000;
+    min-width: 280px;
+}
+
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #fff;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: #eeeeee80;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.carouselCstmImg {
+    max-height: 500px;
+}
+
+#aboutUsPart {
+    background-color: #0D3118E0;
+    padding: 60px;
+    color: white;
+}
+
+.aboutUsImg {
+    margin: 0px auto;
+    max-width: 320px;
+    padding: 30px;
+}
+
+
+.ownerImg {
+    transition: all 0.7s;
+}
+
+.ownerImg:hover {
+    scale: 1.1;
+    opacity: 0.8;
+}
+
+.card {
+    overflow: hidden;
+    transition: all 0.7s;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px 2px #117530;
+}
+
+.startsAt {
+    color: #088a31;
+}
+
+.addToWishList {
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.text-mute {
+    color: #777;
+}
+
+
+.ContactUs {
+    background-image: url("https://wallpaperaccess.com/full/14501.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.ContactUs .form-control {
+    background: transparent;
+    color: white;
+}
+
+#contactFrom {
+    padding: 50px;
+    background: #093c30ba;
+    border-radius: 15px;
+}
+
+
+
+
+
+/* footer  */
+#footerPart {
+    background-color: black;
+    color: white;
+    padding: 45px;
+}
+
+#footerPart ul {
+    list-style: none;
+    color: white;
+}
+
+#footerPart a {
+    color: white;
+}
+
+#footerPart li {
+    margin: 15px auto;
+}
+
+.footerLogo {
+    max-width: 160px;
+    height: auto;
+}
+
+
+
+
+
+
+/* -------------------------- carpenter profile ----------------------  */
+
+
+.carpenter_profile_img {
+    width: 100%;
+    box-shadow: 0px 0px 15px 5px #2b2b2b;
+}
+
+#carpenterabout {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.reviewerImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.ratingpara {
+    margin-left: 60px;
+    color: #4a4a4a;
+}
+
+.reviewline {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #979797;
+}
+
+.productCarouselCstmImg {
+    width: 100%;
+    height: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1100px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+}
