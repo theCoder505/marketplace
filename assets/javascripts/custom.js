@@ -96,3 +96,8 @@ $(".dropdown-item").click(function (event) {
     event.preventDefault();
     window.location.href = 'catagories.html';
 });
+
+$("#dealNow").click(function (event) {
+    event.preventDefault();
+    window.location.href = 'login_signup_page.html';
+});
