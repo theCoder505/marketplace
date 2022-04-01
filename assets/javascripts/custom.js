@@ -101,3 +101,13 @@ $("#dealNow").click(function (event) {
     event.preventDefault();
     window.location.href = 'login_signup_page.html';
 });
+
+$("#goBack").click(function (event) {
+    event.preventDefault();
+    window.location.href = 'index.html';
+});
+
+$("#ordernPaymentNow").click(function (event) {
+    event.preventDefault();
+    window.location.href = 'payment.html';
+});
