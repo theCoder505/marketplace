@@ -39,8 +39,8 @@
 <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
-        <a class="navbar-brand" href="/">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5" id="navigationBar">
+        <a class="navbar-brand" href="landing_page.html">
             <img src="assets/images/logo.png" alt="" class="navImage">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -56,13 +56,13 @@
                         Catagories
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Best Sofas</a>
-                        <a class="dropdown-item" href="#">Best Chairs</a>
-                        <a class="dropdown-item" href="#">Best Doors</a>
-                        <a class="dropdown-item" href="#">Best Windows</a>
-                        <a class="dropdown-item" href="#">Best Tables</a>
-                        <a class="dropdown-item" href="#">Best Weardrofs</a>
-                        <a class="dropdown-item" href="#">Best Bookshelfs</a>
+                        <a class="dropdown-item" href="catagories.html">Best Sofas</a>
+                        <a class="dropdown-item" href="catagories.html">Best Chairs</a>
+                        <a class="dropdown-item" href="catagories.html">Best Doors</a>
+                        <a class="dropdown-item" href="catagories.html">Best Windows</a>
+                        <a class="dropdown-item" href="catagories.html">Best Tables</a>
+                        <a class="dropdown-item" href="catagories.html">Best Weardrofs</a>
+                        <a class="dropdown-item" href="catagories.html">Best Bookshelfs</a>
                     </div>
                 </li>
                 <li class="nav-item active">
@@ -74,8 +74,21 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Orders</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login/Sign-Up
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="login_signup_page.html">As Customer</a>
+                        <a class="dropdown-item" href="maker_login_signup_page.html">As Maker</a>
+                    </div>
+                </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="see_bids.html">View Bids</a>
                 </li>
             </ul>
 
@@ -86,6 +99,7 @@
 
         </div>
     </nav>
+    <div id="navSpacer"></div>
 
 
 
@@ -138,11 +152,25 @@
                         </div>
                         <div class="ratings mt-2">
                             <small class="font-weight-bold"> Time: </small>
-                            <span class="font-weight-bold text-warning"> 7 Days</span>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star-o text-warning"></i>
                         </div>
                         <div class="ratings mt-2">
                             <small class="font-weight-bold"> Shop Attitude: </small>
-                            <span class="font-weight-bold text-warning"> Attractive </span>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                            <i class="fa fa-star text-warning"></i>
+                        </div>
+
+
+                        <div class="font-weight-bold mt-4">
+                            <p>Total Finished works: <span class="text-warning">45</span></p>
+                            <p>Works Under Progress: <span class="text-warning">5</span></p>
                         </div>
 
 
@@ -164,193 +192,11 @@
 
 
 
-    <div class="container py-5">
-
-
-        <h2 class="text-center font-weight-bold text-dark mt-3 pb-4">
-            Services Of Hazelhood
-        </h2>
-
-
-        <div class="row row-cols-1 row-cols-md-3">
-
-
-            <div class="col mb-4 mx-auto">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFlq-H16GbsC3LPI38aP6l4A5-8y8RDDEcg&usqp=CAU"
-                        class="card-img-top ownerImg" alt="Owners Profile">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold text-dark">
-                            Get a new Sofa only in 7 days
-                        </h5>
-                        <div class="ratings">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <span class="text-mute"> (45) </span>
-                        </div>
-                        <p class="card-text text-mute">
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                        </ol>
-                        </p>
-                        <div class="startsAt font-weight-bold">Starts At: $250</div>
-                        <div id="buttons" class="mt-3">
-                            <center>
-                                <button class="getService btn btn-block px-4 btn-info">Get Service</button>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col mb-4 mx-auto">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFlq-H16GbsC3LPI38aP6l4A5-8y8RDDEcg&usqp=CAU"
-                        class="card-img-top ownerImg" alt="Owners Profile">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold text-dark">
-                            Get a new Sofa only in 7 days
-                        </h5>
-                        <div class="ratings">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <span class="text-mute"> (45) </span>
-                        </div>
-                        <p class="card-text text-mute">
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                        </ol>
-                        </p>
-                        <div class="startsAt font-weight-bold">Starts At: $250</div>
-                        <div id="buttons" class="mt-3">
-                            <center>
-                                <button class="getService btn btn-block px-4 btn-info">Get Service</button>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col mb-4 mx-auto">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFlq-H16GbsC3LPI38aP6l4A5-8y8RDDEcg&usqp=CAU"
-                        class="card-img-top ownerImg" alt="Owners Profile">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold text-dark">
-                            Get a new Sofa only in 7 days
-                        </h5>
-                        <div class="ratings">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <span class="text-mute"> (45) </span>
-                        </div>
-                        <p class="card-text text-mute">
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                        </ol>
-                        </p>
-                        <div class="startsAt font-weight-bold">Starts At: $250</div>
-                        <div id="buttons" class="mt-3">
-                            <center>
-                                <button class="getService btn btn-block px-4 btn-info">Get Service</button>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col mb-4 mx-auto">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFlq-H16GbsC3LPI38aP6l4A5-8y8RDDEcg&usqp=CAU"
-                        class="card-img-top ownerImg" alt="Owners Profile">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold text-dark">
-                            Get a new Sofa only in 7 days
-                        </h5>
-                        <div class="ratings">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <span class="text-mute"> (45) </span>
-                        </div>
-                        <p class="card-text text-mute">
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                        </ol>
-                        </p>
-                        <div class="startsAt font-weight-bold">Starts At: $250</div>
-                        <div id="buttons" class="mt-3">
-                            <center>
-                                <button class="getService btn btn-block px-4 btn-info">Get Service</button>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col mb-4 mx-auto">
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFlq-H16GbsC3LPI38aP6l4A5-8y8RDDEcg&usqp=CAU"
-                        class="card-img-top ownerImg" alt="Owners Profile">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold text-dark">
-                            Get a new Sofa only in 7 days
-                        </h5>
-                        <div class="ratings">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <span class="text-mute"> (45) </span>
-                        </div>
-                        <p class="card-text text-mute">
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, unde.</li>
-                        </ol>
-                        </p>
-                        <div class="startsAt font-weight-bold">Starts At: $250</div>
-                        <div id="buttons" class="mt-3">
-                            <center>
-                                <button class="getService btn btn-block px-4 btn-info">Get Service</button>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-
-
 
 
     <div id="workSamples" class="container-fluid mb-5">
-        <h3 class="text-center text-mute font-weight-bold text-dark mt-3 pb-4">
-            Some Working Samples
+        <h3 class="text-center text-mute font-weight-bold text-dark mt-5 pb-4">
+            Working Samples of HazelWood
         </h3>
 
 
@@ -449,9 +295,9 @@
             </div>
         </section>
 
-        <div id="seeallTxt">
+        <!-- <div id="seeallTxt">
             See All <span class="imgNum"></span> Photos
-        </div>
+        </div> -->
 
         <div class="clear"></div>
 

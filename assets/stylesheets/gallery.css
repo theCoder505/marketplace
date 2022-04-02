@@ -450,7 +450,7 @@ img.mfp-img {
     cursor: pointer;
 }
 
-.magnific-img {
+/* .magnific-img {
     display: none !important;
 }
 
@@ -461,7 +461,7 @@ img.mfp-img {
 .magnific-img:nth-child(5),
 .magnific-img:nth-child(6) {
     display: inline-block !important;
-}
+} */
 
 
 #seeallTxt {

@@ -53,29 +53,29 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function () {
-    $('.image-popup-vertical-fit').magnificPopup({
-        type: 'image',
-        mainClass: 'mfp-with-zoom',
-        gallery: {
-            enabled: true
-        },
+// $(document).ready(function () {
+//     $('.image-popup-vertical-fit').magnificPopup({
+//         type: 'image',
+//         mainClass: 'mfp-with-zoom',
+//         gallery: {
+//             enabled: true
+//         },
 
-        zoom: {
-            enabled: true,
+//         zoom: {
+//             enabled: true,
 
-            duration: 300, // duration of the effect, in milliseconds
-            easing: 'ease-in-out', // CSS transition easing function
+//             duration: 300, // duration of the effect, in milliseconds
+//             easing: 'ease-in-out', // CSS transition easing function
 
-            opener: function (openerElement) {
+//             opener: function (openerElement) {
 
-                return openerElement.is('img') ? openerElement : openerElement.find('img');
-            }
-        }
+//                 return openerElement.is('img') ? openerElement : openerElement.find('img');
+//             }
+//         }
 
-    });
+//     });
 
-});
+// });
 
 
 
@@ -92,10 +92,10 @@ $(".getService").click(function () {
     window.location.href = 'particular_service.html';
 });
 
-$(".dropdown-item").click(function (event) {
-    event.preventDefault();
-    window.location.href = 'catagories.html';
-});
+// $(".dropdown-item").click(function (event) {
+//     event.preventDefault();
+//     window.location.href = 'catagories.html';
+// });
 
 $("#dealNow").click(function (event) {
     event.preventDefault();
@@ -104,10 +104,35 @@ $("#dealNow").click(function (event) {
 
 $("#goBack").click(function (event) {
     event.preventDefault();
-    window.location.href = 'index.html';
+    // window.location.href = 'index.html';
+    history.back();
 });
 
 $("#ordernPaymentNow").click(function (event) {
     event.preventDefault();
     window.location.href = 'payment.html';
 });
+
+
+
+
+
+
+
+
+
+
+
+
+function activeArray(passedThis) {
+    var dataId = $(passedThis).attr("data-id");
+    $("#arrowDown").removeClass("rotate");
+    $(passedThis).addClass("rotate");
+
+    $(".allSentBids").addClass("d-none");
+    $("#" + dataId).removeClass("d-none");
+}
+
+
+
+

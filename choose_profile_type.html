@@ -13,7 +13,7 @@
             align-items: center;
             display: flex;
             min-height: 100vh;
-            background-color: rgb(215, 215, 215);
+            background-color: rgb(246, 246, 246);
         }
 
         .background {
@@ -22,11 +22,11 @@
         }
 
         .img {
-            max-width: 400px;
+            width: 230px;
             height: auto;
         }
     </style>
-    <title>Welcome To FLEXBOX</title>
+    <title>Choose A Profile Type - FLEXBOX</title>
 </head>
 
 <body>
@@ -35,17 +35,18 @@
 
     <div class="background">
         <center>
-            <img src="assets/images/logo.png" alt="" class="img">
+            <a href="/login_signup_page.html">
+                <img src="assets/images/webimages/customer.png" alt="" class="img">
+            </a>
+            <br>
+            <br>
+            <br>
+            <a href="/maker_login_signup_page.html">
+                <img src="assets/images/webimages/maker.png" alt="" class="img">
+            </a>
         </center>
     </div>
 
-
-
-    <script>
-        setTimeout(() => {
-            window.location.href = 'choose_profile_type.html';
-        }, 1500);
-    </script>
 </body>
 
 </html>
