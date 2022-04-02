@@ -98,79 +98,129 @@
 
 
 
+    <div id="completeOrderDetails">
 
 
-    <div class="container py-5">
+        <div id="imageUpload">
+            <p class="font-weight-bold">Image Upload</p>
 
 
-        <div id="notifivations" class="row">
-            <div class="col-8">
-                <h2 class="font-weight-bold text-dark">Welcome Mr Amer</h2>
-                <h5>No Work In Progress</h5>
+
+            <center>
+                <div id="addImagesForBid">
+
+
+                    <div id="profileImg">
+                        <div id="profileshowdiv">
+                            <center>
+                                <i class="fa fa-times d-none" onclick="cancelImage('profileImgMainImg')"
+                                    id="crossBidImage"></i>
+                            </center>
+                            <label for="addProfileImg">
+                                <img src="assets/images/webimages/galleryicon.png" alt=""
+                                    class="img-fluid profileImgMainImg">
+                            </label>
+                            <input type="file" id="addProfileImg" hidden accept="image/*" onchange="showProfile(event)"
+                                required data-id="profileImgMainImg" />
+                        </div>
+                    </div>
+
+                    <div id="profileImg">
+                        <div id="profileshowdiv">
+                            <center>
+                                <i class="fa fa-times d-none" onclick="cancelImage('profileImgMainImg2')"
+                                    id="crossBidImage2"></i>
+                            </center>
+                            <label for="addProfileImg2">
+                                <img src="assets/images/webimages/galleryicon.png" alt=""
+                                    class="img-fluid profileImgMainImg2">
+                            </label>
+                            <input type="file" id="addProfileImg2" hidden accept="image/*"
+                                onchange="showProfile2(event)" data-id="profileImgMainImg2" />
+                        </div>
+                    </div>
+
+                    <div id="profileImg">
+                        <div id="profileshowdiv">
+                            <center>
+                                <i class="fa fa-times d-none" onclick="cancelImage('profileImgMainImg3')"
+                                    id="crossBidImage3"></i>
+                            </center>
+                            <label for="addProfileImg3">
+                                <img src="assets/images/webimages/galleryicon.png" alt=""
+                                    class="img-fluid profileImgMainImg3">
+                            </label>
+                            <input type="file" id="addProfileImg3" hidden accept="image/*"
+                                onchange="showProfile3(event)" data-id="profileImgMainImg3" />
+                        </div>
+                    </div>
+
+                    <div id="profileImg">
+                        <div id="profileshowdiv">
+                            <center>
+                                <i class="fa fa-times d-none" onclick="cancelImage('profileImgMainImg4')"
+                                    id="crossBidImage4"></i>
+                            </center>
+                            <label for="addProfileImg4">
+                                <img src="assets/images/webimages/galleryicon.png" alt=""
+                                    class="img-fluid profileImgMainImg4">
+                            </label>
+                            <input type="file" id="addProfileImg4" hidden accept="image/*"
+                                onchange="showProfile4(event)" data-id="profileImgMainImg4" />
+                        </div>
+                    </div>
+
+                    <div id="profileImg">
+                        <div id="profileshowdiv">
+                            <center>
+                                <i class="fa fa-times d-none" onclick="cancelImage('profileImgMainImg5')"
+                                    id="crossBidImage5"></i>
+                            </center>
+                            <label for="addProfileImg5">
+                                <img src="assets/images/webimages/galleryicon.png" alt=""
+                                    class="img-fluid profileImgMainImg5">
+                            </label>
+                            <input type="file" id="addProfileImg5" hidden accept="image/*"
+                                onchange="showProfile5(event)" data-id="profileImgMainImg5" />
+                        </div>
+                    </div>
+
+
+                </div>
+            </center>
+
+
+
+
+        </div>
+
+
+        <div id="unitDetails">
+            <p class="font-weight-bold">Unit Details</p>
+            <div class="row mb-3">
+                <div class="col-md-3">Length( cm )</div>
+                <div class="col-md-9"><input type="number" class="form-control"></div>
             </div>
-            <div class="col-4">
-                <center>
-                    <button class="btn btn-dark btn-lg btn-block" id="addNew">ADD NEW</button>
-                </center>
+            <div class="row mb-3">
+                <div class="col-md-3">Width( cm )</div>
+                <div class="col-md-9"><input type="number" class="form-control"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-3">Height( cm )</div>
+                <div class="col-md-9"><input type="number" class="form-control"></div>
             </div>
         </div>
 
-        <h2 class="text-center text-dark">
-            Don't have pics for your unit No
-            problem explore some ideas
-        </h2>
-
-
-        <div id="addUnits">
-
-            <div class="unitLine">
-                <img src="assets/images/productimages/wardrobe.jpg" alt="" class="unitImage">
-                <button class="btn btn-block btn-dark" onclick="addUnit('unitimageline')">ADD</button>
-            </div>
-
-            <div class="unitLine">
-                <img src="assets/images/productimages/wardrobe.jpg" alt="" class="unitImage">
-                <button class="btn btn-block btn-dark" onclick="addUnit('unitimageline')">ADD</button>
-            </div>
-
-            <div class="unitLine">
-                <img src="assets/images/productimages/wardrobe.jpg" alt="" class="unitImage">
-                <button class="btn btn-block btn-dark" onclick="addUnit('unitimageline')">ADD</button>
-            </div>
-
-            <div class="unitLine">
-                <img src="assets/images/productimages/wardrobe.jpg" alt="" class="unitImage">
-                <button class="btn btn-block btn-dark" onclick="addUnit('unitimageline')">ADD</button>
-            </div>
-
-            <div class="unitLine">
-                <img src="assets/images/productimages/wardrobe.jpg" alt="" class="unitImage">
-                <button class="btn btn-block btn-dark" onclick="addUnit('unitimageline')">ADD</button>
-            </div>
-
-
+        <div class="form-group">
+            <label for="">Material Details</label>
+            <input type="number" class="form-control" placeholder="Type details if any">
         </div>
 
+        <center>
+            <button class="btn btn-dark mt-3 px-5" id="post">POST</button>
+        </center>
     </div>
 
-
-
-    <div id="showImagePopup" class="d-none">
-
-        <div id="popupContainer">
-            <img src="assets/images/productimages/wardrobe.jpg" alt="" class="popUpImg">
-
-            <i class="fa fa-times" aria-hidden="true" id="crossPopUp" onclick="crossItem()"></i>
-
-            <div id="buttons">
-                <center>
-                    <button class="btn btn-dark px-5 mr-2" onclick="addUnit('unitimageline')">ADD</button>
-                    <button class="btn btn-dark px-5" onclick="crossItem()">BACK</button>
-                </center>
-            </div>
-        </div>
-
-    </div>
 
 
 
@@ -201,6 +251,7 @@
         integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="></script>
 
     <script src="assets/javascripts/custom.js"></script>
+    <script src="assets/javascripts/addimage.js"></script>
 </body>
 
 </html>

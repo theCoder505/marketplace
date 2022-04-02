@@ -53,37 +53,37 @@ $(document).ready(function () {
 
 
 
-// $(document).ready(function () {
-//     $('.image-popup-vertical-fit').magnificPopup({
-//         type: 'image',
-//         mainClass: 'mfp-with-zoom',
-//         gallery: {
-//             enabled: true
-//         },
+$(document).ready(function () {
+    $('.image-popup-vertical-fit').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-with-zoom',
+        gallery: {
+            enabled: true
+        },
 
-//         zoom: {
-//             enabled: true,
+        zoom: {
+            enabled: true,
 
-//             duration: 300, // duration of the effect, in milliseconds
-//             easing: 'ease-in-out', // CSS transition easing function
+            duration: 300, // duration of the effect, in milliseconds
+            easing: 'ease-in-out', // CSS transition easing function
 
-//             opener: function (openerElement) {
+            opener: function (openerElement) {
 
-//                 return openerElement.is('img') ? openerElement : openerElement.find('img');
-//             }
-//         }
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
 
-//     });
+    });
 
-// });
-
-
+});
 
 
 
 
 
 
+
+//links 
 $(".showprofile").click(function () {
     window.location.href = 'carpenter_page.html';
 });
@@ -113,8 +113,15 @@ $("#ordernPaymentNow").click(function (event) {
     window.location.href = 'payment.html';
 });
 
+$("#addNew").click(function () {
+    window.location.href = 'complete_bid.html';
+});
 
+$("#post").click(function () {
+    window.location.href = 'see_bids.html';
+});
 
+// links done
 
 
 
@@ -126,11 +133,46 @@ $("#ordernPaymentNow").click(function (event) {
 
 function activeArray(passedThis) {
     var dataId = $(passedThis).attr("data-id");
-    $("#arrowDown").removeClass("rotate");
-    $(passedThis).addClass("rotate");
+    // $("#arrowDown").removeClass("rotate");
+    // $(passedThis).addClass("rotate");
 
-    $(".allSentBids").addClass("d-none");
-    $("#" + dataId).removeClass("d-none");
+
+
+    if ($(passedThis).hasClass("rotate")) {
+        $(passedThis).removeClass("rotate");
+    } else {
+        $("#arrowDown").removeClass("rotate");
+        $(passedThis).addClass("rotate");
+    }
+
+
+
+    if ($("#" + dataId).hasClass("d-none")) {
+        $(".allSentBids").addClass("d-none");
+        $("#" + dataId).removeClass("d-none");
+    } else {
+        $("#" + dataId).addClass("d-none");
+    }
+
+}
+
+
+
+function addUnit(passedValue) {
+    console.log(passedValue);
+    window.location.href = 'see_bids.html';
+}
+
+
+$(".unitImage").click(function () {
+    var imageSrc = $(this).attr("src");
+    $(".popUpImg").attr("src", imageSrc);
+    $("#showImagePopup").removeClass("d-none");
+});
+
+
+function crossItem() {
+    $("#showImagePopup").addClass("d-none");
 }
 
 

@@ -215,6 +215,104 @@
 }
 
 
+#addUnits {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.unitLine {
+  width: 30%;
+  margin: 20px 10px;
+  border: 4px solid #343a40;
+  border-radius: 10px;
+}
+
+.unitImage {
+  width: 100%;
+  height: 300px;
+  border-radius: 7px 7px 0px 0px;
+}
+
+#buttons{
+    margin-top: 30px;
+}
+
+.popUpImg {
+  height: 70vh;
+  margin-top: 50px;
+  max-width: 650px;
+}
+
+#crossPopUp {
+  color: white;
+  font-size: 30px;
+  position: relative;
+  top: -25%;
+  left: 20px;
+}
+
+
+
+#showImagePopup {
+  width: 100%;
+  height: 100vh;
+  background: #000c;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+
+#profileImg{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+#profileshowdiv img{
+    width: 200px;
+    height: 200px;
+}
+
+#profileshowdiv i {
+  float: right;
+  font-size: 23px;
+}
+
+.uploader {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.container {
+    position: relative
+}
+
+
+#addImagesForBid {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#completeOrderDetails {
+  padding: 35px;
+  max-width: 1000px;
+  margin: 70px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px #9d9d9d;
+}
+
+
+
 @media only screen and (min-width: 1100px) {
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         position: absolute;
@@ -222,5 +320,18 @@
 
     .rightBorder{
         border-right: 4px solid #b3b2b2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .unitLine{
+        width: 100%;
+    }
+    .popUpImg {
+        max-width: 300px;
+    }
+
+    #completeOrderDetails{
+        margin: 70px 20px;
     }
 }
