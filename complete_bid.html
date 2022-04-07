@@ -45,45 +45,26 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Catagories
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="catagories.html">Best Sofas</a>
-                        <a class="dropdown-item" href="catagories.html">Best Chairs</a>
-                        <a class="dropdown-item" href="catagories.html">Best Doors</a>
-                        <a class="dropdown-item" href="catagories.html">Best Windows</a>
-                        <a class="dropdown-item" href="catagories.html">Best Tables</a>
-                        <a class="dropdown-item" href="catagories.html">Best Weardrofs</a>
-                        <a class="dropdown-item" href="catagories.html">Best Bookshelfs</a>
-                    </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="landing_page.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">My Profile</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Messages</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Notifications</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Orders</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Login/Sign-Up
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="login_signup_page.html">As Customer</a>
-                        <a class="dropdown-item" href="maker_login_signup_page.html">As Maker</a>
-                    </div>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Profile</a>
+                    <a class="nav-link" href="#">Arabic</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="see_bids.html">View Bids</a>
+                    <a class="nav-link" href="/logout">Sign Out</a>
                 </li>
             </ul>
 
@@ -98,11 +79,36 @@
 
 
 
-    <div id="completeOrderDetails">
+    <div class="container">
+
+        <div id="notifivations" class="row">
+            <div class="col-12 col-md-3 borderRight">
+                <center>
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        alt="" class="userImage">
+                    <p class="font-weight-bold pt-2">Mohamed Amer</p>
+                </center>
+            </div>
+            <div class="col-12 col-md-9">
+                <h4 class="font-weight-bold text-dark pt-5">
+                    Welcome Mohamed Amer,
+                    please add the unit details knowing that your inputs are just rough estimates
+                    to guide the carpenters to do accurate bids.
+                </h4>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="completeOrderDetails" class="container">
 
 
         <div id="imageUpload">
-            <p class="font-weight-bold">Image Upload</p>
+
+            <h4 class="font-weight-bold">Unit Details</h4>
+            <p class="font-weight-bold">Add Unit Pictures</p>
 
 
 
@@ -195,29 +201,36 @@
         </div>
 
 
-        <div id="unitDetails">
-            <p class="font-weight-bold">Unit Details</p>
+        <div id="unitDetails" class="py-3">
+            <p class="font-weight-bold">Dimentions In cm</p>
             <div class="row mb-3">
-                <div class="col-md-3">Length( cm )</div>
+                <div class="col-md-2">Length</div>
                 <div class="col-md-9"><input type="number" class="form-control"></div>
             </div>
             <div class="row mb-3">
-                <div class="col-md-3">Width( cm )</div>
+                <div class="col-md-2">Width</div>
                 <div class="col-md-9"><input type="number" class="form-control"></div>
             </div>
             <div class="row mb-3">
-                <div class="col-md-3">Height( cm )</div>
+                <div class="col-md-2">Height</div>
                 <div class="col-md-9"><input type="number" class="form-control"></div>
             </div>
         </div>
 
         <div class="form-group">
-            <label for="">Material Details</label>
-            <input type="number" class="form-control" placeholder="Type details if any">
+            <label for="textmaterial" class="font-weight-bold">Material</label>
+            <textarea class="form-control" id="textmaterial" rows="3" placeholder="Type details if any"></textarea>
         </div>
 
+        <p class="py-3 font-weight-bold">
+            **Please note that this is not the final dimensions, those are just high level dimensions to help maker
+            estimates the
+            price range and you should ask the carpenters later to come and have the final accurate dimension,
+        </p>
+
         <center>
-            <button class="btn btn-dark mt-3 px-5" id="post">POST</button>
+            <button class="btn btn-danger mt-3 px-5 mr-3 mb-3" id="goBack">BACK</button>
+            <button class="btn btn-warning mt-3 px-5 mb-3" id="post">POST</button>
         </center>
     </div>
 

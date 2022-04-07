@@ -1,0 +1,33 @@
+<script language="JavaScript1.2" type="text/javascript">
+
+    function AddBookmarkLink() {
+        title = "Webpage Title";
+
+        url = "Webpage URL";
+
+        if (window.sidebar) {
+            // Mozilla Firefox Bookmark		
+            window.sidebar.addPanel(title, url, "");
+        } else if (window.external) {
+            // IE Favorite		
+            window.external.AddFavorite(url, title);
+        } else if (window.opera && window.print) {
+            // Opera Hotlist		
+            return true;
+        }
+    }
+
+    if (window.external) {
+
+        document.write('<a href ="javascript:AddBookmarkLink()");">Add to Favorites</a>');
+
+    } else if (window.sidebar) {
+
+        document.write('<a href =     "javascript:AddBookmarkLink()");">Bookmark Page</a>');
+
+    } else if (window.opera && window.print) {
+
+        document.write('<a href =     "javascript:AddBookmarkLink()");">Add Bookmark</a>');
+    }
+
+</script>
