@@ -98,11 +98,34 @@
 
         <div id="bidLines" class="my-3">
             <div id="notifivations" class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 borderRight">
+                    <center>
+                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                            alt="" class="productImg roundedImg">
+                        <h5>Mohamed Amer</h5>
+                    </center>
+                </div>
+                <div class="col-12 col-md-5 borderRight pt-3">
+                    <h4 class="font-weight-bold text-dark">Number Of Bids In Progress</h4>
+                    <h1 class="font-weight-bold text-dark text-center">2</h1>
+                </div>
+                <div class="col-12 col-md-4 pt-3">
+                    <h4 class="font-weight-bold text-dark">Number Of Work In Progress</h4>
+                    <h1 class="font-weight-bold text-dark text-center">0</h1>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="bidLines" class="my-3">
+            <div id="notifivations" class="row">
+                <div class="col-12 col-md-3 borderRight">
                     <img src="assets/images/productimages/wardrobe.jpg" alt="" class="productImg">
                     <h5>Wardrobe</h5>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 borderRight">
                     <h4 class="font-weight-bold text-dark">9 Bids</h4>
                     <h4 class="font-weight-bold text-dark">9k min Bid</h4>
                     <h4 class="font-weight-bold text-dark">27k max Bid</h4>
@@ -115,8 +138,9 @@
                 </div>
                 <div class="col-12">
                     <center>
-                        <i class="fa fa-chevron-circle-down" id="arrowDown" onclick="activeArray(this)"
-                            data-id="bidnline1"></i>
+                        <button class="btn  btn-block" id="arrowDown" onclick="activeArray(this)" data-id="bidnline1">
+                            Press Here To Expand And See Bids
+                        </button>
                     </center>
                 </div>
             </div>
@@ -131,35 +155,54 @@
                     <div class="col-12 col-md-3">
                         <img src="assets/images/makerprofilepic/rawmaker.jpg" alt="" class="productImg">
                     </div>
-                    <div class="col-12 col-md-6 rightBorder">
+                    <div class="col-12 col-md-6 rightLeftborder">
                         <h4 class="font-weight-bold text-dark">Robert Hazelwood's Shop</h4>
-                        <div class="ratings pb-3">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star-o text-warning"></i>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-4 pt-3 text-center ratings pb-3">
+                                <p class="font-weight-bold">Overall Rating</p>
+                                <p>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-o text-warning"></i>
+                                </p>
+                                <p class="font-weight-bold">4.5 Out Of 5</p>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center finished">
+                                <p class="text-dark font-weight-bold">
+                                    Finished Work
+                                </p>
+                                <h3 class="text-dark font-weight-bold">35</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center workprogress">
+                                <p class="text-dark font-weight-bold">
+                                    Work In Progress
+                                </p>
+                                <h3 class="text-dark font-weight-bold">05</h3>
+                            </div>
                         </div>
-                        <p class="text-dark">
-                            <span>35 Finished Tasks</span>
-                            <br>
-                            <span>3 In Progress</span>
-                        </p>
+
+
+
                     </div>
                     <div class="col-12 col-md-3">
-                        <center>
-                            <h5 class="font-weight-bold text-dark">Price/Time</h5>
-                            <p class="text-dark">
-                                <span>11k - 14.5k</span>
-                                <br>
-                                <span>One Week - Three Week</span>
-                            </p>
-                        </center>
+                        <p class="text-dark font-weight-bold">
+                            <span>Price Range: </span>
+                            <span>11k - 14.5k</span>
+                            <br>
+                            <span>Period: </span>
+                            <span>One Week - Three Week</span>
+                        </p>
                         <div class="text-lg-center">
-                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2 btn-block">View
+                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2">View
                                 Profile</a>
-                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2 btn-block"
-                                id="dealNow">Deal Now</a>
+                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2" id="dealNow">Deal
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -168,35 +211,54 @@
                     <div class="col-12 col-md-3">
                         <img src="assets/images/makerprofilepic/rawmaker.jpg" alt="" class="productImg">
                     </div>
-                    <div class="col-12 col-md-6 rightBorder">
+                    <div class="col-12 col-md-6 rightLeftborder">
                         <h4 class="font-weight-bold text-dark">Robert Hazelwood's Shop</h4>
-                        <div class="ratings pb-3">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star-o text-warning"></i>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-4 pt-3 text-center ratings pb-3">
+                                <p class="font-weight-bold">Overall Rating</p>
+                                <p>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-o text-warning"></i>
+                                </p>
+                                <p class="font-weight-bold">4.5 Out Of 5</p>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center finished">
+                                <p class="text-dark font-weight-bold">
+                                    Finished Work
+                                </p>
+                                <h3 class="text-dark font-weight-bold">35</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center workprogress">
+                                <p class="text-dark font-weight-bold">
+                                    Work In Progress
+                                </p>
+                                <h3 class="text-dark font-weight-bold">05</h3>
+                            </div>
                         </div>
-                        <p class="text-dark">
-                            <span>35 Finished Tasks</span>
-                            <br>
-                            <span>3 In Progress</span>
-                        </p>
+
+
+
                     </div>
                     <div class="col-12 col-md-3">
-                        <center>
-                            <h5 class="font-weight-bold text-dark">Price/Time</h5>
-                            <p class="text-dark">
-                                <span>11k - 14.5k</span>
-                                <br>
-                                <span>One Week - Three Week</span>
-                            </p>
-                        </center>
+                        <p class="text-dark font-weight-bold">
+                            <span>Price Range: </span>
+                            <span>11k - 14.5k</span>
+                            <br>
+                            <span>Period: </span>
+                            <span>One Week - Three Week</span>
+                        </p>
                         <div class="text-lg-center">
-                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2 btn-block">View
+                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2">View
                                 Profile</a>
-                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2 btn-block"
-                                id="dealNow">Deal Now</a>
+                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2" id="dealNow">Deal
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -205,40 +267,57 @@
                     <div class="col-12 col-md-3">
                         <img src="assets/images/makerprofilepic/rawmaker.jpg" alt="" class="productImg">
                     </div>
-                    <div class="col-12 col-md-6 rightBorder">
+                    <div class="col-12 col-md-6 rightLeftborder">
                         <h4 class="font-weight-bold text-dark">Robert Hazelwood's Shop</h4>
-                        <div class="ratings pb-3">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star-o text-warning"></i>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-4 pt-3 text-center ratings pb-3">
+                                <p class="font-weight-bold">Overall Rating</p>
+                                <p>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-o text-warning"></i>
+                                </p>
+                                <p class="font-weight-bold">4.5 Out Of 5</p>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center finished">
+                                <p class="text-dark font-weight-bold">
+                                    Finished Work
+                                </p>
+                                <h3 class="text-dark font-weight-bold">35</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center workprogress">
+                                <p class="text-dark font-weight-bold">
+                                    Work In Progress
+                                </p>
+                                <h3 class="text-dark font-weight-bold">05</h3>
+                            </div>
                         </div>
-                        <p class="text-dark">
-                            <span>35 Finished Tasks</span>
-                            <br>
-                            <span>3 In Progress</span>
-                        </p>
+
+
+
                     </div>
                     <div class="col-12 col-md-3">
-                        <center>
-                            <h5 class="font-weight-bold text-dark">Price/Time</h5>
-                            <p class="text-dark">
-                                <span>11k - 14.5k</span>
-                                <br>
-                                <span>One Week - Three Week</span>
-                            </p>
-                        </center>
+                        <p class="text-dark font-weight-bold">
+                            <span>Price Range: </span>
+                            <span>11k - 14.5k</span>
+                            <br>
+                            <span>Period: </span>
+                            <span>One Week - Three Week</span>
+                        </p>
                         <div class="text-lg-center">
-                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2 btn-block">View
+                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2">View
                                 Profile</a>
-                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2 btn-block"
-                                id="dealNow">Deal Now</a>
+                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2" id="dealNow">Deal
+                                Now</a>
                         </div>
                     </div>
                 </div>
-
-
 
             </div>
         </div>
@@ -246,11 +325,11 @@
 
         <div id="bidLines" class="my-3">
             <div id="notifivations" class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 borderRight">
                     <img src="assets/images/productimages/wardrobe.jpg" alt="" class="productImg">
                     <h5>Wardrobe</h5>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 borderRight">
                     <h4 class="font-weight-bold text-dark">9 Bids</h4>
                     <h4 class="font-weight-bold text-dark">9k min Bid</h4>
                     <h4 class="font-weight-bold text-dark">27k max Bid</h4>
@@ -263,8 +342,9 @@
                 </div>
                 <div class="col-12">
                     <center>
-                        <i class="fa fa-chevron-circle-down" id="arrowDown" onclick="activeArray(this)"
-                            data-id="bidnline2"></i>
+                        <button class="btn  btn-block" id="arrowDown" onclick="activeArray(this)" data-id="bidnline2">
+                            Press Here To Expand And See Bids
+                        </button>
                     </center>
                 </div>
             </div>
@@ -279,35 +359,54 @@
                     <div class="col-12 col-md-3">
                         <img src="assets/images/makerprofilepic/rawmaker.jpg" alt="" class="productImg">
                     </div>
-                    <div class="col-12 col-md-6 rightBorder">
+                    <div class="col-12 col-md-6 rightLeftborder">
                         <h4 class="font-weight-bold text-dark">Robert Hazelwood's Shop</h4>
-                        <div class="ratings pb-3">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star-o text-warning"></i>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-4 pt-3 text-center ratings pb-3">
+                                <p class="font-weight-bold">Overall Rating</p>
+                                <p>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-o text-warning"></i>
+                                </p>
+                                <p class="font-weight-bold">4.5 Out Of 5</p>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center finished">
+                                <p class="text-dark font-weight-bold">
+                                    Finished Work
+                                </p>
+                                <h3 class="text-dark font-weight-bold">35</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center workprogress">
+                                <p class="text-dark font-weight-bold">
+                                    Work In Progress
+                                </p>
+                                <h3 class="text-dark font-weight-bold">05</h3>
+                            </div>
                         </div>
-                        <p class="text-dark">
-                            <span>35 Finished Tasks</span>
-                            <br>
-                            <span>3 In Progress</span>
-                        </p>
+
+
+
                     </div>
                     <div class="col-12 col-md-3">
-                        <center>
-                            <h5 class="font-weight-bold text-dark">Price/Time</h5>
-                            <p class="text-dark">
-                                <span>11k - 14.5k</span>
-                                <br>
-                                <span>One Week - Three Week</span>
-                            </p>
-                        </center>
+                        <p class="text-dark font-weight-bold">
+                            <span>Price Range: </span>
+                            <span>11k - 14.5k</span>
+                            <br>
+                            <span>Period: </span>
+                            <span>One Week - Three Week</span>
+                        </p>
                         <div class="text-lg-center">
-                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2 btn-block">View
+                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2">View
                                 Profile</a>
-                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2 btn-block"
-                                id="dealNow">Deal Now</a>
+                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2" id="dealNow">Deal
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -316,35 +415,54 @@
                     <div class="col-12 col-md-3">
                         <img src="assets/images/makerprofilepic/rawmaker.jpg" alt="" class="productImg">
                     </div>
-                    <div class="col-12 col-md-6 rightBorder">
+                    <div class="col-12 col-md-6 rightLeftborder">
                         <h4 class="font-weight-bold text-dark">Robert Hazelwood's Shop</h4>
-                        <div class="ratings pb-3">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star-o text-warning"></i>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-4 pt-3 text-center ratings pb-3">
+                                <p class="font-weight-bold">Overall Rating</p>
+                                <p>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-o text-warning"></i>
+                                </p>
+                                <p class="font-weight-bold">4.5 Out Of 5</p>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center finished">
+                                <p class="text-dark font-weight-bold">
+                                    Finished Work
+                                </p>
+                                <h3 class="text-dark font-weight-bold">35</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center workprogress">
+                                <p class="text-dark font-weight-bold">
+                                    Work In Progress
+                                </p>
+                                <h3 class="text-dark font-weight-bold">05</h3>
+                            </div>
                         </div>
-                        <p class="text-dark">
-                            <span>35 Finished Tasks</span>
-                            <br>
-                            <span>3 In Progress</span>
-                        </p>
+
+
+
                     </div>
                     <div class="col-12 col-md-3">
-                        <center>
-                            <h5 class="font-weight-bold text-dark">Price/Time</h5>
-                            <p class="text-dark">
-                                <span>11k - 14.5k</span>
-                                <br>
-                                <span>One Week - Three Week</span>
-                            </p>
-                        </center>
+                        <p class="text-dark font-weight-bold">
+                            <span>Price Range: </span>
+                            <span>11k - 14.5k</span>
+                            <br>
+                            <span>Period: </span>
+                            <span>One Week - Three Week</span>
+                        </p>
                         <div class="text-lg-center">
-                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2 btn-block">View
+                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2">View
                                 Profile</a>
-                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2 btn-block"
-                                id="dealNow">Deal Now</a>
+                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2" id="dealNow">Deal
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -353,35 +471,54 @@
                     <div class="col-12 col-md-3">
                         <img src="assets/images/makerprofilepic/rawmaker.jpg" alt="" class="productImg">
                     </div>
-                    <div class="col-12 col-md-6 rightBorder">
+                    <div class="col-12 col-md-6 rightLeftborder">
                         <h4 class="font-weight-bold text-dark">Robert Hazelwood's Shop</h4>
-                        <div class="ratings pb-3">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star-o text-warning"></i>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-4 pt-3 text-center ratings pb-3">
+                                <p class="font-weight-bold">Overall Rating</p>
+                                <p>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-o text-warning"></i>
+                                </p>
+                                <p class="font-weight-bold">4.5 Out Of 5</p>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center finished">
+                                <p class="text-dark font-weight-bold">
+                                    Finished Work
+                                </p>
+                                <h3 class="text-dark font-weight-bold">35</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center workprogress">
+                                <p class="text-dark font-weight-bold">
+                                    Work In Progress
+                                </p>
+                                <h3 class="text-dark font-weight-bold">05</h3>
+                            </div>
                         </div>
-                        <p class="text-dark">
-                            <span>35 Finished Tasks</span>
-                            <br>
-                            <span>3 In Progress</span>
-                        </p>
+
+
+
                     </div>
                     <div class="col-12 col-md-3">
-                        <center>
-                            <h5 class="font-weight-bold text-dark">Price/Time</h5>
-                            <p class="text-dark">
-                                <span>11k - 14.5k</span>
-                                <br>
-                                <span>One Week - Three Week</span>
-                            </p>
-                        </center>
+                        <p class="text-dark font-weight-bold">
+                            <span>Price Range: </span>
+                            <span>11k - 14.5k</span>
+                            <br>
+                            <span>Period: </span>
+                            <span>One Week - Three Week</span>
+                        </p>
                         <div class="text-lg-center">
-                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2 btn-block">View
+                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2">View
                                 Profile</a>
-                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2 btn-block"
-                                id="dealNow">Deal Now</a>
+                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2" id="dealNow">Deal
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -394,11 +531,11 @@
 
         <div id="bidLines" class="my-3">
             <div id="notifivations" class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 borderRight">
                     <img src="assets/images/productimages/wardrobe.jpg" alt="" class="productImg">
                     <h5>Wardrobe</h5>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 borderRight">
                     <h4 class="font-weight-bold text-dark">9 Bids</h4>
                     <h4 class="font-weight-bold text-dark">9k min Bid</h4>
                     <h4 class="font-weight-bold text-dark">27k max Bid</h4>
@@ -411,8 +548,9 @@
                 </div>
                 <div class="col-12">
                     <center>
-                        <i class="fa fa-chevron-circle-down" id="arrowDown" onclick="activeArray(this)"
-                            data-id="bidnline3"></i>
+                        <button class="btn  btn-block" id="arrowDown" onclick="activeArray(this)" data-id="bidnline3">
+                            Press Here To Expand And See Bids
+                        </button>
                     </center>
                 </div>
             </div>
@@ -427,35 +565,54 @@
                     <div class="col-12 col-md-3">
                         <img src="assets/images/makerprofilepic/rawmaker.jpg" alt="" class="productImg">
                     </div>
-                    <div class="col-12 col-md-6 rightBorder">
+                    <div class="col-12 col-md-6 rightLeftborder">
                         <h4 class="font-weight-bold text-dark">Robert Hazelwood's Shop</h4>
-                        <div class="ratings pb-3">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star-o text-warning"></i>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-4 pt-3 text-center ratings pb-3">
+                                <p class="font-weight-bold">Overall Rating</p>
+                                <p>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-o text-warning"></i>
+                                </p>
+                                <p class="font-weight-bold">4.5 Out Of 5</p>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center finished">
+                                <p class="text-dark font-weight-bold">
+                                    Finished Work
+                                </p>
+                                <h3 class="text-dark font-weight-bold">35</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center workprogress">
+                                <p class="text-dark font-weight-bold">
+                                    Work In Progress
+                                </p>
+                                <h3 class="text-dark font-weight-bold">05</h3>
+                            </div>
                         </div>
-                        <p class="text-dark">
-                            <span>35 Finished Tasks</span>
-                            <br>
-                            <span>3 In Progress</span>
-                        </p>
+
+
+
                     </div>
                     <div class="col-12 col-md-3">
-                        <center>
-                            <h5 class="font-weight-bold text-dark">Price/Time</h5>
-                            <p class="text-dark">
-                                <span>11k - 14.5k</span>
-                                <br>
-                                <span>One Week - Three Week</span>
-                            </p>
-                        </center>
+                        <p class="text-dark font-weight-bold">
+                            <span>Price Range: </span>
+                            <span>11k - 14.5k</span>
+                            <br>
+                            <span>Period: </span>
+                            <span>One Week - Three Week</span>
+                        </p>
                         <div class="text-lg-center">
-                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2 btn-block">View
+                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2">View
                                 Profile</a>
-                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2 btn-block"
-                                id="dealNow">Deal Now</a>
+                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2" id="dealNow">Deal
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -464,35 +621,54 @@
                     <div class="col-12 col-md-3">
                         <img src="assets/images/makerprofilepic/rawmaker.jpg" alt="" class="productImg">
                     </div>
-                    <div class="col-12 col-md-6 rightBorder">
+                    <div class="col-12 col-md-6 rightLeftborder">
                         <h4 class="font-weight-bold text-dark">Robert Hazelwood's Shop</h4>
-                        <div class="ratings pb-3">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star-o text-warning"></i>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-4 pt-3 text-center ratings pb-3">
+                                <p class="font-weight-bold">Overall Rating</p>
+                                <p>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-o text-warning"></i>
+                                </p>
+                                <p class="font-weight-bold">4.5 Out Of 5</p>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center finished">
+                                <p class="text-dark font-weight-bold">
+                                    Finished Work
+                                </p>
+                                <h3 class="text-dark font-weight-bold">35</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center workprogress">
+                                <p class="text-dark font-weight-bold">
+                                    Work In Progress
+                                </p>
+                                <h3 class="text-dark font-weight-bold">05</h3>
+                            </div>
                         </div>
-                        <p class="text-dark">
-                            <span>35 Finished Tasks</span>
-                            <br>
-                            <span>3 In Progress</span>
-                        </p>
+
+
+
                     </div>
                     <div class="col-12 col-md-3">
-                        <center>
-                            <h5 class="font-weight-bold text-dark">Price/Time</h5>
-                            <p class="text-dark">
-                                <span>11k - 14.5k</span>
-                                <br>
-                                <span>One Week - Three Week</span>
-                            </p>
-                        </center>
+                        <p class="text-dark font-weight-bold">
+                            <span>Price Range: </span>
+                            <span>11k - 14.5k</span>
+                            <br>
+                            <span>Period: </span>
+                            <span>One Week - Three Week</span>
+                        </p>
                         <div class="text-lg-center">
-                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2 btn-block">View
+                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2">View
                                 Profile</a>
-                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2 btn-block"
-                                id="dealNow">Deal Now</a>
+                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2" id="dealNow">Deal
+                                Now</a>
                         </div>
                     </div>
                 </div>
@@ -501,35 +677,54 @@
                     <div class="col-12 col-md-3">
                         <img src="assets/images/makerprofilepic/rawmaker.jpg" alt="" class="productImg">
                     </div>
-                    <div class="col-12 col-md-6 rightBorder">
+                    <div class="col-12 col-md-6 rightLeftborder">
                         <h4 class="font-weight-bold text-dark">Robert Hazelwood's Shop</h4>
-                        <div class="ratings pb-3">
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star text-warning"></i>
-                            <i class="fa fa-star-o text-warning"></i>
+
+
+                        <div class="row">
+                            <div class="col-12 col-md-4 pt-3 text-center ratings pb-3">
+                                <p class="font-weight-bold">Overall Rating</p>
+                                <p>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-o text-warning"></i>
+                                </p>
+                                <p class="font-weight-bold">4.5 Out Of 5</p>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center finished">
+                                <p class="text-dark font-weight-bold">
+                                    Finished Work
+                                </p>
+                                <h3 class="text-dark font-weight-bold">35</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 pt-3 text-center workprogress">
+                                <p class="text-dark font-weight-bold">
+                                    Work In Progress
+                                </p>
+                                <h3 class="text-dark font-weight-bold">05</h3>
+                            </div>
                         </div>
-                        <p class="text-dark">
-                            <span>35 Finished Tasks</span>
-                            <br>
-                            <span>3 In Progress</span>
-                        </p>
+
+
+
                     </div>
                     <div class="col-12 col-md-3">
-                        <center>
-                            <h5 class="font-weight-bold text-dark">Price/Time</h5>
-                            <p class="text-dark">
-                                <span>11k - 14.5k</span>
-                                <br>
-                                <span>One Week - Three Week</span>
-                            </p>
-                        </center>
+                        <p class="text-dark font-weight-bold">
+                            <span>Price Range: </span>
+                            <span>11k - 14.5k</span>
+                            <br>
+                            <span>Period: </span>
+                            <span>One Week - Three Week</span>
+                        </p>
                         <div class="text-lg-center">
-                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2 btn-block">View
+                            <a href="carpenter_page.html" class="btn btn-sm btn-dark px-4 mt-2 mr-2">View
                                 Profile</a>
-                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2 btn-block"
-                                id="dealNow">Deal Now</a>
+                            <a href="login_signup_page.html" class="btn btn-sm btn-success px-4 mt-2" id="dealNow">Deal
+                                Now</a>
                         </div>
                     </div>
                 </div>

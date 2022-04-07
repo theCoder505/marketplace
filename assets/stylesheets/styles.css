@@ -184,20 +184,17 @@
 }
 
 #arrowDown {
-  text-align: center;
-  height: auto;
-  font-weight: bold;
-  border-radius: 50%;
-  font-size: 50px;
-  transition: all 0.5s;
-}
-
-.rotate {
-  rotate: 180deg;
+  background: white;
+  border: 2px solid black;
+  margin-top: 20px;
 }
 
 .rightBorder{
     border-right: 0px solid #b3b2b2;
+}
+
+.roundedImg{
+    border-radius: 50%;
 }
 
 
@@ -367,6 +364,11 @@ input[type=checkbox] {
   border-right: 7px double black;
 }
 
+.rightLeftborder {
+  border-left: 7px double black;
+  border-right: 7px double black;
+}
+
 #imageContainer {
   width: 300px;
   height: 300px;
@@ -410,5 +412,9 @@ input[type=checkbox] {
 
     #completeOrderDetails{
         margin: 70px 20px;
+    }
+
+    .rightLeftborder, .borderRight{
+        border: none;
     }
 }
